@@ -14,7 +14,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h1>Login</h1>
+        <h1>Food Flow</h1>
         <div>
           <label>Usuário:
             <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />

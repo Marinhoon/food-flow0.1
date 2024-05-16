@@ -6,15 +6,19 @@ const AdicionarCredito = () => {
   const { paciente } = useParams();
   
   const [credito, setCredito] = useState('');
+  const [saldo, setSaldo] = useState(0);
 
-  const handleAdicionarCredito = () => { 
-    alert(`Crédito de ${credito} Reais adicionado ao paciente ${paciente}`);
+  const handleAdicionarCredito = () => {
+    const novoSaldo = saldo + parseFloat(credito);
+    setSaldo(novoSaldo);
+    alert(`Crédito de ${credito} reais adicionado ao paciente ${paciente}`);
   };
 
   return (
     <div>
       <h1>Adicionar Crédito</h1>
       <h2>Paciente: {paciente}</h2>
+      <h3>Saldo atual: {saldo} Reais</h3>
       <div>
         <label>Valor do crédito:
           <input type="number" value={credito} onChange={(e) => setCredito(e.target.value)} />

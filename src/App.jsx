@@ -6,10 +6,11 @@ import PacienteMenu from './PacienteMenu';
 import LancheControl from './LancheControl';
 import RecargaCredito from './AdicionarCredito';
 import AdicionarCredito from './AdicionarCredito'
-
+import {CreditProvider} from './CreditContext'
 
 function App() {
   return (
+    <CreditProvider>
     <Router>
       <div className="App">
         <Routes>
@@ -21,6 +22,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </CreditProvider>
   );
 }
 

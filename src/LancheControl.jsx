@@ -48,6 +48,7 @@ const LancheControl = () => {
     <div>
       <h1>Controle de Lanches e Créditos</h1>
       <h2>Paciente: {paciente}</h2>
+      
       <div>
         <label>Quantidade:
           <input type="number" name="quantidade" value={form.quantidade} onChange={handleInputChange} />

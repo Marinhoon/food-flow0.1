@@ -32,7 +32,7 @@ const PacienteMenu = () => {
       convenio: 'SUL AMÉRICA',
       medico: 'DANIEL ERNESTO ROCHA BRANDÃO',
       internacao: '24/04/2024',
-      dietas: 'Dieta Branda - NUTRIÇÃO:'
+      dietas: 'Dieta Branda - NUTRIÇÃO'
     }
   ];
 
