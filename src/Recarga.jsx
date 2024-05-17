@@ -1,6 +1,5 @@
-// Recarga.js
-import React, { useState, useContext } from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useContext, useState } from 'react';
+import { useHistory, useParams } from 'react-router-dom';
 import { CreditContext } from './CreditContext';
 
 const Recarga = () => {
