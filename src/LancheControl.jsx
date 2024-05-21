@@ -99,7 +99,7 @@ const LancheControl = () => {
           />
         </label>
         <button onClick={adicionarLanche}>Adicionar Lanche</button>
-        <Link to="/pacientes">Voltar ao Menu</Link>
+        git
       </div>
       <h2>Produtos</h2>
       <table>
