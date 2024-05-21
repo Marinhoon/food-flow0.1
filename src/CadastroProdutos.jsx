@@ -1,14 +1,13 @@
-import { useState, useContext } from "react";
-import "./CadastroProdutos.css";
-import { ProductContext } from "./ProductContext";
-import { Link } from "react-router-dom";
+import { useState, useContext } from 'react';
+import { ProductContext } from './ProductContext';
+import { Link } from 'react-router-dom';
 
 const CadastroProdutos = () => {
-  const { addProduct } = useContext(ProductContext);
+  const { products, addProduct } = useContext(ProductContext);
   const [form, setForm] = useState({
-    nome: "",
-    descricao: "",
-    preco: "",
+    nome: '',
+    descricao: '',
+    preco: ''
   });
 
   const handleInputChange = (e) => {
@@ -23,8 +22,8 @@ const CadastroProdutos = () => {
     e.preventDefault();
     const { nome, descricao, preco } = form;
     addProduct({ nome, descricao, preco });
-    setForm({ nome: "", descricao: "", preco: "" });
-    alert("Produto cadastrado com sucesso!");
+    setForm({ nome: '', descricao: '', preco: '' });
+    alert('Produto cadastrado com sucesso!');
   };
 
   return (
@@ -33,7 +32,7 @@ const CadastroProdutos = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            Nome:
+            PRODUTO:
             <input
               type="text"
               name="nome"
@@ -45,7 +44,7 @@ const CadastroProdutos = () => {
         </div>
         <div>
           <label>
-            Descrição:
+            VALIDADE:
             <input
               type="text"
               name="descricao"
@@ -57,7 +56,7 @@ const CadastroProdutos = () => {
         </div>
         <div>
           <label>
-            Preço:
+            VALOR:
             <input
               type="number"
               name="preco"
@@ -70,6 +69,25 @@ const CadastroProdutos = () => {
         <button type="submit">Cadastrar Produto</button>
         <Link to="/pacientes">Voltar ao Menu</Link>
       </form>
+      <h2>Produtos Cadastrados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>PRODUTO</th>
+            <th>VALIDADE</th>
+            <th>VALOR</th>
+          </tr>
+        </thead>
+        <tbody>
+          {products.map((product, index) => (
+            <tr key={index}>
+              <td>{product.nome}</td>
+              <td>{product.descricao}</td>
+              <td>{product.preco}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
