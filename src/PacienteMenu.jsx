@@ -49,6 +49,7 @@ const PacienteMenu = () => {
     <div>
       <h1>Menu de Pacientes</h1>
       <Link to="/">Sair</Link>
+      <Link to="/cadastro-produtos" className="button">Cadastrar Produtos</Link>
       <input
         type="text"
         placeholder="Pesquisar Paciente"

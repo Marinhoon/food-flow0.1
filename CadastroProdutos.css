@@ -1,0 +1,44 @@
+.cadastro-produtos {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .cadastro-produtos h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cadastro-produtos form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cadastro-produtos label {
+    margin-bottom: 10px;
+  }
+  
+  .cadastro-produtos input {
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .cadastro-produtos button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cadastro-produtos button:hover {
+    background-color: #0056b3;
+  }
+  
