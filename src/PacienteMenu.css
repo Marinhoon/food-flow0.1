@@ -1,3 +1,68 @@
+body {
+  background-color: #; /* cinza claro */
+}
+
+/* Estilize o cabeçalho */
+header.bg-white {
+  background-color: #f8f9fa !important; /* outra tonalidade de cinza claro */
+}
+
+/* Estilize a barra de navegação */
+.navbar.bg-body-tertiary {
+  background-color: #343a40 !important; /* cinza escuro */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff !important; /* texto branco para contraste */
+}
+
+.navbar .nav-link:hover {
+  color: #dcdcdc !important; /* texto branco para contraste */
+}
+
+.navbar .dropdown-menu {
+  background-color: #495057; /* cinza intermediário */
+}
+
+.navbar .dropdown-item {
+  color: #ffffff !important;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #343a40; /* cinza escuro */
+}
+
+/* Estilize o formulário de pesquisa */
+.form-control {
+  background-color: #ffffff; /* fundo branco */
+  color: #000000; /* texto preto */
+}
+
+.btn-outline-success {
+  color: #ffffff; /* texto branco */
+  border-color: #28a745; /* borda verde */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745; /* fundo verde */
+  border-color: #28a745; /* borda verde */
+}
+
+/* Estilize o botão fechar no modal */
+button.close-modal-btn {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button.close-modal-btn:hover {
+  background-color: #218838;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
