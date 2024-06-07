@@ -1,24 +1,23 @@
 
 header.bg-white {
-  background-color: #f8f9fa !important; /* outra tonalidade de cinza claro */
+  background-color: #f8f9fa !important; 
 }
 
-/* Estilize a barra de navegação */
 .navbar.bg-body-tertiary {
-  background-color: #343a40 !important; /* cinza escuro */
+  background-color: #343a40 !important;
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-  color: #ffffff !important; /* texto branco para contraste */
+  color: #ffffff !important; 
 }
 
 .navbar .nav-link:hover {
-  color: #dcdcdc !important; /* texto branco para contraste */
+  color: #dcdcdc !important;
 }
 
 .navbar .dropdown-menu {
-  background-color: #495057; /* cinza intermediário */
+  background-color: #495057;
 }
 
 .navbar .dropdown-item {
@@ -26,26 +25,26 @@ header.bg-white {
 }
 
 .navbar .dropdown-item:hover {
-  background-color: #343a40; /* cinza escuro */
+  background-color: #343a40; 
 }
 
-/* Estilize o formulário de pesquisa */
+
 .form-control {
-  background-color: #ffffff; /* fundo branco */
-  color: #000000; /* texto preto */
+  background-color: #ffffff; 
+  color: #000000; 
 }
 
 .btn-outline-success {
-  color: #ffffff; /* texto branco */
-  border-color: #28a745; /* borda verde */
+  color: #ffffff; 
+  border-color: #28a745; 
 }
 
 .btn-outline-success:hover {
-  background-color: #28a745; /* fundo verde */
-  border-color: #28a745; /* borda verde */
+  background-color: #28a745;
+  border-color: #28a745; 
 }
 
-/* Estilize o botão fechar no modal */
+
 button.close-modal-btn {
   background-color: #28a745;
   color: #ffffff;
